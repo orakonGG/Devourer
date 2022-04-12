@@ -52,12 +52,6 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpOomph);
         }
-
-        // melee attack input
-        if(Input.GetKeyDown("v"))
-        {
-            // PlayerCombat call
-        }
     }
 
 
