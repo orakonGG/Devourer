@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 43abb99be2dad1a40942797d3c29d47f
+guid: 42fdad98c041b354bb3e7efc2c7204a6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8675580872748157594
-    second: goop_sheet_0
+      213: -5525482509576851636
+    second: turtlebot-Sheet_0
   - first:
-      213: -1068315871809023154
-    second: goop_sheet_1
+      213: -4618715933925792382
+    second: turtlebot-Sheet_1
   - first:
-      213: 4622124170927487961
-    second: goop_sheet_2
+      213: 2265917545269959781
+    second: turtlebot-Sheet_2
   - first:
-      213: -175538621408605532
-    second: goop_sheet_3
-  - first:
-      213: 7326590030763617541
-    second: goop_sheet_4
-  - first:
-      213: 5230148776737979910
-    second: goop_sheet_5
-  - first:
-      213: 8773099891281728533
-    second: goop_sheet_6
-  - first:
-      213: -8423284533464486269
-    second: goop_sheet_7
+      213: -5516431257522516549
+    second: turtlebot-Sheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: goop_sheet_0
+      name: turtlebot-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,14 +129,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6653ca359252a9780800000000000000
-      internalID: -8675580872748157594
+      spriteID: c4fa90cceea8153b0800000000000000
+      internalID: -5525482509576851636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goop_sheet_1
+      name: turtlebot-Sheet_1
       rect:
         serializedVersion: 2
         x: 32
@@ -162,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4359e0ff549c21f0800000000000000
-      internalID: -1068315871809023154
+      spriteID: 285aaef345607efb0800000000000000
+      internalID: -4618715933925792382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goop_sheet_2
+      name: turtlebot-Sheet_2
       rect:
         serializedVersion: 2
         x: 64
@@ -183,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9db31e3c175152040800000000000000
-      internalID: 4622124170927487961
+      spriteID: 56c14288008227f10800000000000000
+      internalID: 2265917545269959781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goop_sheet_3
+      name: turtlebot-Sheet_3
       rect:
         serializedVersion: 2
         x: 96
@@ -204,92 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4aa049acd8c509df0800000000000000
-      internalID: -175538621408605532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: goop_sheet_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50d6596a0d64da560800000000000000
-      internalID: 7326590030763617541
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: goop_sheet_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60e39e71a98359840800000000000000
-      internalID: 5230148776737979910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: goop_sheet_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5149dd68edf40c970800000000000000
-      internalID: 8773099891281728533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: goop_sheet_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38eaec4685b7a1b80800000000000000
-      internalID: -8423284533464486269
+      spriteID: bbd4283aff2b173b0800000000000000
+      internalID: -5516431257522516549
       vertices: []
       indices: 
       edges: []
