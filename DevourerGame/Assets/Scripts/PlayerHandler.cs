@@ -8,6 +8,9 @@ public class PlayerHandler : MonoBehaviour
     public int meleeDamage = 25;
     public int health = 100;
 
+    private float cooldownTime;
+    private bool isCooldown;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,22 +20,28 @@ public class PlayerHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.V))
+        while (!isCooldown)
         {
-            Melee();
-        }
+            if (Input.GetKeyDown(KeyCode.V))
+            {
+                Debug.Log("V pressed.");
+                Melee();
+
+            }
+        } 
     }
 
     void Melee()
     {
         meleeActive = true;
-        CoolDown(1.1f);
+        Debug.Log("If you're reading this, WTF.");
+        CoolDown(2f);
         meleeActive = false;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("enemy") && meleeActive)
+        if (other.gameObject.CompareTag("Enemy") && meleeActive)
         {
             other.gameObject.SetActive(false);
             Damage(other, meleeDamage);
@@ -49,7 +58,12 @@ public class PlayerHandler : MonoBehaviour
 
     IEnumerator CoolDown(float number)
     {
-        yield return new WaitForSeconds(number);
+        // Start cooldown
+        isCooldown = true;
+        // Wait for time you want
+        yield return new WaitForSeconds(cooldownTime);
+        // Stop cooldown
+        isCooldown = false;
 
     }
 

@@ -33,7 +33,9 @@ public class PlayerMovement : MonoBehaviour
 
         // WASD/arrow key input
         direction = Input.GetAxis("Horizontal");
-        Debug.Log(direction);
+        
+        //Debug.Log(direction);
+
         if (direction > 0f)
         {
             rb.velocity = new Vector2(direction * speed, rb.velocity.y);
