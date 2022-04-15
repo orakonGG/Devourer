@@ -6,12 +6,15 @@ public class PlayerHandler : MonoBehaviour
 {
     public bool meleeActive;
     public int meleeDamage = 25;
-    public int health = 100;
+    private int health = 100;
 
     BoxCollider2D triggerBox;
 
     private float coolDownTime;
     private bool isCoolDown;
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +28,11 @@ public class PlayerHandler : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.V))
         {
-            Debug.Log("V pressed.");
+            //Debug.Log("V pressed.");
             Melee();
+           // StopCoroutine(CoolDown());
+           // StartCoroutine(CoolDown());
+            //Melee();
 
         }
     }
@@ -34,35 +40,35 @@ public class PlayerHandler : MonoBehaviour
     // sets melee to active
     void Melee()
     {
-        meleeActive = true;
-        Debug.Log("If you're reading this, WTF.");
-        CoolDown(2f);
-        meleeActive = false;
-    }
-    
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Enemy") && meleeActive)
+        if (meleeActive)
         {
-            other.gameObject.SetActive(false);
-            Damage(other, meleeDamage);
+            meleeActive = false;
+
+            Debug.Log("melee false");
+        }
+        else
+        {
+            meleeActive = true;
+
+            Debug.Log("melee active");
         }
 
     }
+    
 
-    void Damage(Collider other, int ammount)
+
+    void Damage(GameObject hit, int ammount)
     {
-        // gameObject.health = gameObject.health - ammount;
-        // if (gameObject.health <= 0)
-        // other.gameObject.setActive(false); 
+        
+
     }
 
-    IEnumerator CoolDown(float number)
+    IEnumerator CoolDown()
     {
         // Start cooldown
         isCoolDown = true;
         // Wait for time you want
-        yield return new WaitForSeconds(coolDownTime);
+        yield return new WaitForSeconds(5f);
         // Stop cooldown
         isCoolDown = false;
 
