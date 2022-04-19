@@ -348,7 +348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 410177172}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -719,7 +719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1277603396}
   - component: {fileID: 1277603397}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MeleeTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -781,9 +781,9 @@ GameObject:
   - component: {fileID: 1298096063}
   - component: {fileID: 1298096064}
   - component: {fileID: 1298096069}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
