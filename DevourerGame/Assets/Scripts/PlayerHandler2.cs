@@ -69,7 +69,6 @@ public class PlayerHandler2 : MonoBehaviour
         isCoolDown = false;
         meleeActive = false;
         Debug.Log("melee false");
-
     }
 
 }
