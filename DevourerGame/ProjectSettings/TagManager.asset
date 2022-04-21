@@ -9,15 +9,15 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - back drop
   - Water
   - UI
-  - Foreground
-  - 
-  - 
-  - 
-  - 
-  - 
+  - ground
+  - enemies
+  - players
+  - foreground
+  - ui overlay
+  - end screen
   - 
   - 
   - 

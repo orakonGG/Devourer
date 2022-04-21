@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: -5516431257522516549
     second: turtlebot-Sheet_3
+  - first:
+      213: -8110583210054771773
+    second: turtlebot-Sheet_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -62,7 +65,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -194,6 +197,27 @@ TextureImporter:
       bones: []
       spriteID: bbd4283aff2b173b0800000000000000
       internalID: -5516431257522516549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turtlebot-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb107bca8b617f80800000000000000
+      internalID: -8110583210054771773
       vertices: []
       indices: 
       edges: []

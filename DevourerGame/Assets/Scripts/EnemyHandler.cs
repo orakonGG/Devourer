@@ -7,6 +7,9 @@ public class EnemyHandler : MonoBehaviour
     public GameObject player;
     public PlayerHandler playerHandler;
     public int health;
+    public bool downBash;
+    public bool laserTurt;
+    public bool squishShoot;
 
 
 
