@@ -46,10 +46,12 @@ public class PlayerMovement : MonoBehaviour
         if (direction > 0f)
         {
             rb.velocity = new Vector2(direction * speed, rb.velocity.y);
+            gameObject.transform.localScale = new Vector3 (2,2,1);
         }
         else if (direction < 0f)
         {
             rb.velocity = new Vector2(direction * speed, rb.velocity.y);
+            gameObject.transform.localScale = new Vector3(-2, 2, 1);
         }
         else
         {
