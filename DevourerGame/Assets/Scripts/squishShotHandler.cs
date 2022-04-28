@@ -17,6 +17,7 @@ public class squishShotHandler : MonoBehaviour
     {
         transform.position += -transform.right * Time.deltaTime * Speed;
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
