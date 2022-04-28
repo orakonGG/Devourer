@@ -11,7 +11,7 @@ public class PlayerHandler : MonoBehaviour
     BoxCollider2D triggerBox;
 
     private float coolDownTime;
-    private bool isCoolDown;
+    //private bool isCoolDown;
 
     // Start is called before the first frame update
     void Start()
@@ -60,11 +60,11 @@ public class PlayerHandler : MonoBehaviour
     IEnumerator CoolDown(float number)
     {
         // Start cooldown
-        isCoolDown = true;
+        //isCoolDown = true;
         // Wait for time you want
         yield return new WaitForSeconds(coolDownTime);
         // Stop cooldown
-        isCoolDown = false;
+        //isCoolDown = false;
 
     }
 

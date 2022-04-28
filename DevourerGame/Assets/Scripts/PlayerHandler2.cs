@@ -7,11 +7,12 @@ public class PlayerHandler2 : MonoBehaviour
     public bool meleeActive;
     public int meleeDamage = 25;
     private int health = 8;
+    public GameObject gameOver;
 
     BoxCollider2D triggerBox;
 
     private float coolDownTime;
-    private bool isCoolDown;
+    //private bool isCoolDown;
 
     public Animator animator;
 
@@ -59,6 +60,7 @@ public class PlayerHandler2 : MonoBehaviour
         {
             //respawn
             Debug.Log("dead");
+            gameOver.SetActive(true);
         }
 
     }
@@ -66,11 +68,11 @@ public class PlayerHandler2 : MonoBehaviour
     IEnumerator CoolDown()
     {
         // Start cooldown
-        isCoolDown = true;
+       // isCoolDown = true;
         // Wait for time you want
         yield return new WaitForSeconds(0.5f);
         // Stop cooldown
-        isCoolDown = false;
+       // isCoolDown = false;
         meleeActive = false;
         animator.SetBool("isPunching", false);
         Debug.Log("melee false");

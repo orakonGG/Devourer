@@ -1,28 +1,22 @@
 fileFormatVersion: 2
-guid: 3fa4655d7a33aec418363ff6f910d32f
+guid: a4ed16772908bc8419de4ad98097f12a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1575205143907121363
-    second: goopsmash-Sheet_0
+      213: -4847848807344607396
+    second: dumb_game_over-Sheet_0
   - first:
-      213: 5956743166003345183
-    second: goopsmash-Sheet_1
+      213: 6031294749953341822
+    second: dumb_game_over-Sheet_1
   - first:
-      213: -219830468789774329
-    second: goopsmash-Sheet_2
+      213: 1316459141677677990
+    second: dumb_game_over-Sheet_2
   - first:
-      213: 1560046884478991851
-    second: goopsmash-Sheet_3
+      213: 3871774057759278671
+    second: dumb_game_over-Sheet_3
   - first:
-      213: 72199143552184750
-    second: goopsmash-Sheet_4
-  - first:
-      213: -4602754533215288184
-    second: goopsmash-Sheet_5
-  - first:
-      213: 1391014073576763106
-    second: goopsmash-Sheet_6
+      213: 6033281615102881673
+    second: dumb_game_over-Sheet_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -67,7 +61,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -124,97 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: goopsmash-Sheet_0
+      name: dumb_game_over-Sheet_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 6
-        width: 16
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d274c05744fb32ae0800000000000000
-      internalID: -1575205143907121363
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: goopsmash-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 8
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f177ddb695a9aa250800000000000000
-      internalID: 5956743166003345183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: goopsmash-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 9
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7085af47a5103fcf0800000000000000
-      internalID: -219830468789774329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: goopsmash-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 2
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bed335e306666a510800000000000000
-      internalID: 1560046884478991851
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: goopsmash-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 134
+        x: 0
         y: 0
-        width: 21
-        height: 17
+        width: 256
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea1f3801db0800100800000000000000
-      internalID: 72199143552184750
+      spriteID: c5f6c69d13bf8bcb0800000000000000
+      internalID: -4847848807344607396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goopsmash-Sheet_5
+      name: dumb_game_over-Sheet_1
       rect:
         serializedVersion: 2
-        x: 166
+        x: 256
         y: 0
-        width: 21
-        height: 17
+        width: 256
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8844263732bbf10c0800000000000000
-      internalID: -4602754533215288184
+      spriteID: e79b5a2be9673b350800000000000000
+      internalID: 6031294749953341822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: goopsmash-Sheet_6
+      name: dumb_game_over-Sheet_2
       rect:
         serializedVersion: 2
-        x: 201
+        x: 512
         y: 0
-        width: 16
-        height: 21
+        width: 256
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,8 +174,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2eeac151eefdd4310800000000000000
-      internalID: 1391014073576763106
+      spriteID: 6ad730d4d90054210800000000000000
+      internalID: 1316459141677677990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dumb_game_over-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f468053fdfd4bb530800000000000000
+      internalID: 3871774057759278671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dumb_game_over-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f2a1ac9a58ab350800000000000000
+      internalID: 6033281615102881673
       vertices: []
       indices: 
       edges: []
