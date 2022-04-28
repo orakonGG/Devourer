@@ -13,7 +13,7 @@ public class PlayerHandler2 : MonoBehaviour
     private float coolDownTime;
     private bool isCoolDown;
 
-
+    public Animator animator;
 
 
     // Start is called before the first frame update
@@ -30,8 +30,6 @@ public class PlayerHandler2 : MonoBehaviour
         {
             // Debug.Log("V pressed.");
             Melee();
-
-
         }
     }
 
@@ -45,6 +43,7 @@ public class PlayerHandler2 : MonoBehaviour
         else
         {
             meleeActive = true;
+            animator.SetBool("isPunching", true);
             Debug.Log("melee active");
             StartCoroutine(CoolDown());
         }
@@ -73,6 +72,7 @@ public class PlayerHandler2 : MonoBehaviour
         // Stop cooldown
         isCoolDown = false;
         meleeActive = false;
+        animator.SetBool("isPunching", false);
         Debug.Log("melee false");
     }
 

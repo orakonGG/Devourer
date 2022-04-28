@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    public Animator animator;
+
     // jump conditions
     public Transform groundCheck;
     public float groundCheckRadius = 0.4f;
@@ -29,7 +31,12 @@ public class PlayerMovement : MonoBehaviour
     // player input moving the object
     void Update()
     {
+        // ground check and animator
         isTouchingGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        if (isTouchingGround)
+        {
+            animator.SetBool("isJumping", false);
+        }
 
         // WASD/arrow key input
         direction = Input.GetAxis("Horizontal");
@@ -54,6 +61,14 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpOomph);
         }
+        // animate jump
+        if (Mathf.Abs(rb.velocity.y) > 0.01)
+        {
+            animator.SetBool("isJumping", true);
+        }
+
+        // animate run
+        animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
     }
 
 
