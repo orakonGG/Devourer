@@ -6,7 +6,7 @@ public class PlayerHandler2 : MonoBehaviour
 {
     public bool meleeActive;
     public int meleeDamage = 25;
-    private int health = 100;
+    private int health = 8;
 
     BoxCollider2D triggerBox;
 
@@ -30,7 +30,7 @@ public class PlayerHandler2 : MonoBehaviour
         {
             // Debug.Log("V pressed.");
             Melee();
-            
+
 
         }
     }
@@ -50,12 +50,17 @@ public class PlayerHandler2 : MonoBehaviour
         }
 
     }
-    
 
 
-    void Damage(GameObject hit, int ammount)
+
+    void Damage(int ammount)
     {
-        
+        health = health - ammount;
+        if (health <= 0)
+        {
+            //respawn
+            Debug.Log("dead");
+        }
 
     }
 
@@ -71,4 +76,17 @@ public class PlayerHandler2 : MonoBehaviour
         Debug.Log("melee false");
     }
 
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "projectile")
+        {
+
+
+            Destroy(other.gameObject);
+            //the animation would still play to completion
+            Damage(1);
+
+
+        }
+    }
 }

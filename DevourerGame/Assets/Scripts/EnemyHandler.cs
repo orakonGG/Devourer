@@ -11,21 +11,28 @@ public class EnemyHandler : MonoBehaviour
     public bool laserTurt;
     public bool squishShoot;
 
+    //enemy damage prefabs
+    public GameObject squishShootPrefab;
+    public GameObject bashPrefab;
+    public GameObject laserPrefab;
+
+    public Transform spawn;
+
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    
+
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player") && playerHandler.meleeActive)
@@ -44,6 +51,29 @@ public class EnemyHandler : MonoBehaviour
         {
             gameObject.SetActive(false);
 
+        }
+    }
+
+    public void DownBash()
+    {
+        if (downBash)
+        {
+            Instantiate(bashPrefab, spawn.position, Quaternion.identity);
+
+        }
+    }
+    public void SquishShoot()
+    {
+        if (squishShoot)
+        {
+            Instantiate(squishShootPrefab, spawn.position, Quaternion.identity);
+        }
+    }
+    public void Laser()
+    {
+        if (laserTurt)
+        {
+            Instantiate(laserPrefab, spawn.position, Quaternion.identity);
         }
     }
 }
