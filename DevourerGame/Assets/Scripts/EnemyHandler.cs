@@ -15,6 +15,7 @@ public class EnemyHandler : MonoBehaviour
     public GameObject squishShootPrefab;
     public GameObject bashPrefab;
     public GameObject laserPrefab;
+    
 
     public Transform spawn;
 
@@ -30,14 +31,14 @@ public class EnemyHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player") && playerHandler.meleeActive)
         {
-            //gameObject.SetActive(false);
+            gameObject.SetActive(false);
             Damage(playerHandler.meleeDamage);
 
         }

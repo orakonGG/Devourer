@@ -68,7 +68,7 @@ public class PlayerHandler2 : MonoBehaviour
         // Start cooldown
         isCoolDown = true;
         // Wait for time you want
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         // Stop cooldown
         isCoolDown = false;
         meleeActive = false;
